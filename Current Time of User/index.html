@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script> <!-- Added dayjs library -->
+</head>
+<body>
+
+    <div class="hero">
+        <!-- Background video -->
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="Ocean Hourglass.mp4" type="video/mp4">
+        </video>
+
+        <div class="container">
+            <!-- Timezone display -->
+            <div id="timezone"></div> 
+            <div class="clock">
+                <!-- Clock display -->
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+            <!-- Day and current date display -->
+            <div id="day"></div> <!-- New element for current day -->
+            <div id="currentDate"></div> 
+        </div>
+
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

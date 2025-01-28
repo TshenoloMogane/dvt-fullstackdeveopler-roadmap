@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External script for confetti animation -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title>What are you doing today?</title>
+</head>
+<body>
+    <!-- Canvas element for confetti animation -->
+    <canvas id="confettiCanvas"></canvas>
+    <!-- Hero section with video background -->
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="Beach_Background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Container for the to-do list -->
+    <div class="container"> 
+        <h1>What are you doing today?</h1>
+        <!-- Input field for adding tasks -->
+        <input type="text" id="taskInput" placeholder="Add / Search a Task" class="inputbox">
+        <!-- Button to add tasks -->
+        <button type="submit" id="addTask" class="button">Add</button>
+        <!-- Button to search tasks -->
+        <button type="submit" id="searchTask" style="font-size: .98em;" class="fa fa-search button search"></button>
+
+        <button type="submit" id="clearSearch" style="display: none; background-color: #8E8D64;" class="button">Clear</button>
+        <!-- List to display tasks -->
+        <ul id="taskList">
+            <!-- li Element-->
+        </ul>
+    </div>
+
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

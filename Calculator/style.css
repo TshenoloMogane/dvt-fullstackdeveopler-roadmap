@@ -1,0 +1,86 @@
+/* Center the calculator on the page */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background image */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(sunflower.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Calculator container */
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3e9;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    margin-right: -600px;
+}
+
+/* Display area */
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: #f9f3e9;
+    color: #333;
+}
+
+/* Keypad layout */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+/* Button styles */
+button {
+    width: 100px;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: #ffcc00;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button hover and active states */
+button:hover {
+    background-color: #e6b800;
+}
+button:active {
+    background-color: #cc9900;
+}
+
+/* Operator button styles */
+.operator-btn {
+    background-color: #99cc66;
+}
+.operator-btn:hover {
+    background-color: #88b359;
+}
+.operator-btn:active {
+    background-color: #7a9e4d;
+}
